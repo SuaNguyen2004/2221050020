@@ -24,7 +24,7 @@ p {
   /* 4 giá trị : trên phải dưới trái (theo chiều kim đồng hồ) */
   /* margin: 50px 30px 100px 10px; */
   width: 50%;
-  margin: auto; /* căn khối ra giữa*/
+  margin: 50px auto; /* căn khối ra giữa*/
 }
 
 .box3 {
