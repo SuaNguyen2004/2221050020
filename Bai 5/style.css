@@ -68,8 +68,23 @@ main {
 }
 
 .baiviet {
-  height: 200px;
+  height: 400px;
   background-color: skyblue;
   width: 32%;
 }
 
+.thongbao {
+  /* border: 1px solid #ccc; */
+  border-radius: 6px;
+  margin-top: 20px;
+  /* overflow: hidden; */
+  background: #fff;
+}
+
+.tieudethongbao {
+  background-color: #2fa4e7;
+  padding: 10px 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
