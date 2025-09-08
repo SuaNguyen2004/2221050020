@@ -82,10 +82,8 @@ main {
 }
 
 .thongbao {
-  /* border: 1px solid #ccc; */
   border-radius: 6px;
   margin-top: 20px;
-  /* overflow: hidden; */
   background: #fff;
 }
 
