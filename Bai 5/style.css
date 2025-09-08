@@ -34,11 +34,12 @@ ul {
 
 .logo {
   height: 80px;
-  background-color: black;
+  background-color: skyblue;
 }
 
 main {
   display: flex;
+  background-color: #ececec;
 }
 
 .noidung-trai {
@@ -48,9 +49,10 @@ main {
   border-radius: 10px;
 }
 .noidung-phai {
-  height: 1000px;
-  background-color: chocolate;
+  /* height: 1500px; */
+  /* background-color: chocolate; */
   width: 20%;
+  margin-left: 20px;
 }
 
 .tieude {
@@ -65,12 +67,18 @@ main {
 .tintuc-danhsach {
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 .baiviet {
-  height: 400px;
+  /* height: 400px; */
   background-color: skyblue;
   width: 32%;
+  font-size: 14px;
+}
+
+.background {
+  background-color: white;
 }
 
 .thongbao {
@@ -81,10 +89,71 @@ main {
   background: #fff;
 }
 
-.tieudethongbao {
+.thongbao-noidung {
+  display: flex;
+}
+
+.img {
+  width: 25%;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.danhsachthongbao {
+  width: 75%;
+  font-size: 14px;
+}
+
+.thoigian {
+  width: 15%;
+  font-size: 14px;
+}
+
+.huongdan {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.noidung-huongdan {
+  display: flex;
+  background-color: white;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.danhsach-huongdan {
+  width: 85%;
+  margin-left: 50px;
+  font-size: 14px;
+}
+
+a {
+  text-align: right;
+}
+
+.caidat-app {
+  margin-top: 20px;
+}
+
+.app img {
+  width: 80%;
+}
+
+.footer {
+  text-align: center;
   background-color: #2fa4e7;
-  padding: 10px 15px;
   color: white;
-  font-size: 20px;
-  font-weight: bold;
+}
+.footer p {
+  margin: 5px;
+  font-size: 13px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.caidat-app {
+  background-color: white;
 }
