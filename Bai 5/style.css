@@ -33,6 +33,7 @@ ul {
 }
 
 .logo {
+  width: 100%;
   height: 80px;
   background-color: skyblue;
 }
@@ -77,6 +78,11 @@ main {
   font-size: 14px;
 }
 
+.baiviet img {
+  width: 100%;
+  height: 100px;
+}
+
 .background {
   background-color: white;
 }
@@ -100,11 +106,26 @@ main {
 .danhsachthongbao {
   width: 75%;
   font-size: 14px;
+  list-style: none;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
-.thoigian {
-  width: 15%;
-  font-size: 14px;
+.text {
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.danhsachthongbao i {
+  text-align: right;
+  display: block;
+  min-width: 150px;
 }
 
 .huongdan {
