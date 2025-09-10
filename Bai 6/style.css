@@ -8,10 +8,10 @@ header {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
   background-color: black;
   width: 70%;
   margin: auto;
-  justify-content: space-between;
 }
 
 .danhmuc {
@@ -33,9 +33,8 @@ ul {
 }
 
 a {
-  /* color: gray; */
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bolder;
   color: #9b9b9b;
   font-size: 16px;
   font-family: "SFProDisplay", Arial, sans-serif;
@@ -55,8 +54,8 @@ a:hover {
   background-color: orangered;
   border: none;
   color: white;
-  width: 100px;
   padding: 10px 20px;
+  width: 100px;
   border-radius: 10px;
 }
 
@@ -71,7 +70,7 @@ main {
   background-color: #131314;
   color: white;
   width: 100%;
-  height: 1000px;
+  /* height: 1000px; */
 }
 
 .quangcao {
@@ -82,7 +81,7 @@ main {
 .container {
   width: 70%;
   background-color: black;
-  height: 1000px;
+  /* height: 1000px; */
   margin: auto;
 }
 
@@ -94,4 +93,71 @@ main {
   margin-top: 10px;
   width: 98%;
   border-radius: 10px;
+}
+
+.tentheloai {
+  margin: 20px;
+}
+
+.danhsach {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.phim {
+  width: 19%;
+}
+
+.phim img {
+  width: 100%;
+}
+
+footer {
+  padding-top: 50px;
+  background-color: #131314;
+}
+
+.container2 {
+  width: 70%;
+  background-color: #131314;
+  /* height: 1000px; */
+  margin: auto;
+  display: flex;
+  border-top: 1px solid gray;
+}
+
+.footer1 {
+  width: 20%;
+  margin-right: 100px;
+}
+
+.anh1 img {
+  width: 80%;
+}
+.footer2 {
+  width: 20%;
+  /* background-color: aqua; */
+  font-size: 14px;
+}
+
+.footer2 a {
+  font-size: 14px;
+}
+
+.footer2 ul {
+  flex-direction: column;
+}
+
+.text {
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.text p {
+  color: white;
+  margin: 0;
+  font-family: "SFProDisplay", Arial, sans-serif;
+  font-size: 13px;
+  color: #d2d2d2;
 }
