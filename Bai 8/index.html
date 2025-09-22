@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài JavaScript</title>
+    <script src="script.js"></script>
+    <!-- liên kết sang file .js -->
+  </head>
+  <body>
+    <script>
+      document.writeln("Hello World! <br>" + "<br>");
+
+      // để khai báo biến JS dùng let hoặc var
+      // Cú pháp: let Tên biến = Giá trị;
+      // Để nối chuỗi JS dùng dấu +
+      let hoTen = "Nguyen Van Sua" + "<br>";
+      //   let name = value;
+      //   var name = value;
+
+      document.writeln(hoTen);
+
+      // Phép cộng +
+      // Phép trừ -
+      // Phép nhân *
+      // Phép chia /
+
+      // Tăng 1: ++
+      // Giảm 1: --
+      //  ketQua = soThuNhat / soThuHai;
+      //   document.writeln(ketQua);
+
+      //   soThuNhat += soThuHai;
+      // soThuNhat = soThuNhat + soThuHai
+      //   soThuNhat /= 3;
+
+      let soThuNhat = 5;
+      let soThuHai = "5";
+      let ketQua;
+      // == != === !== > < >= <=
+      //   document.writeln(soThuNhat < soThuHai);
+
+      //   document.writeln(ketQua);
+
+      let thongTinSinhVien = {
+        hoTen: "Nguyen Van Sua",
+        mssv: 2221050020,
+        lop: "DCCTCT67_07A",
+        tuoi: 21,
+        gioiTinh: true,
+      };
+
+      let diaChiNha = {
+        thanhPho: "Hà Nội",
+        phuong: "Thường Tín",
+        xom: 2,
+      };
+
+      thongTinSinhVien.diaChi = diaChiNha;
+
+      // sau khi gán thì sẽ được
+      //   let thongTinSinhVien = {
+      //     hoTen: "Nguyen Van Sua",
+      //     mssv: 2221050020,
+      //     lop: "DCCTCT67_07A",
+      //     tuoi: 21,
+      //     gioiTinh: true,
+      //     diaCHi: {
+      //       thanhPho: "Hà Nội",
+      //       phuong: "Thường Tín",
+      //       xom: 2,
+      //     },
+      //   };
+
+      document.writeln(
+        "Xin chao ban: " +
+          thongTinSinhVien.hoTen +
+          " " +
+          thongTinSinhVien.tuoi +
+          " tuổi" +
+          " nhà ở " +
+          thongTinSinhVien.diaChi.phuong +
+          " " +
+          thongTinSinhVien.diaChi.thanhPho +
+          "<br>"
+      );
+
+      let namNay = 2025;
+      document.writeln(
+        "Bạn " + thongTinSinhVien.hoTen + " Sinh năm " + (namNay - thongTinSinhVien.tuoi)
+      );
+    </script>
+  </body>
+</html>
