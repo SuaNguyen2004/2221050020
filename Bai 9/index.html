@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let thongTinDonHang = {
+      //     maDonHang: "Don01",
+      //     thongTinKhachHang: {
+      //       hoTen: "Sua Nguyen",
+      //       soDienThoai: "0123456789",
+      //       trangThaiThanhVienThanThiet: true,
+      //     },
+      //     danhSachSanPham: {
+      //       sp01: {
+      //         maSanPham: "01",
+      //         tenSanPham: "Cà phê",
+      //         soLuong: 10,
+      //         giaTienChoMotSanPham: 10000,
+      //       },
+      //       sp02: {
+      //         maSanPham: "02",
+      //         tenSanPham: "Matcha",
+      //         soLuong: 2,
+      //         giaTienChoMotSanPham: 40000,
+      //       },
+      //       sp03: {
+      //         maSanPham: "03",
+      //         tenSanPham: "Trà Sữa",
+      //         soLuong: 1,
+      //         giaTienChoMotSanPham: 50000,
+      //       },
+      //     },
+      //     trangThaiThanhToan: true,
+      //     diaChiGiaoHang: "Hà Đông",
+      //   };
+      let thongTinDonHang = {
+        maDonHang: "12345678",
+        thongTinKhachHang: {
+          hoTen: "MinhHieu",
+          soDienThoai: "0987654321",
+          trangThaiThanhVienThanThiet: false,
+        },
+        danhSachSanPham: {
+          sp01: {
+            maSanPham: "1",
+            tenSanPham: "Matcha",
+            soLuong: 10,
+            giaTien: 10000,
+          },
+          sp02: {
+            maSanPham: "2",
+            tenSanPham: "Cà phê",
+            soLuong: 10,
+            giaTien: 20000,
+          },
+          sp03: {
+            maSanPham: "3",
+            tenSanPham: "Trà sữa",
+            soLuong: 15,
+            giaTien: 20000,
+          },
+        },
+        thanhToanThanhCong: true,
+        diaChiGiaoHang: "Đông Ngạc",
+      };
+
+      let tongSP1 =
+        thongTinDonHang.danhSachSanPham.sp01.soLuong * thongTinDonHang.danhSachSanPham.sp01.giaTien;
+      let tongSP2 =
+        thongTinDonHang.danhSachSanPham.sp02.soLuong * thongTinDonHang.danhSachSanPham.sp02.giaTien;
+      let tongSP3 =
+        thongTinDonHang.danhSachSanPham.sp03.soLuong * thongTinDonHang.danhSachSanPham.sp03.giaTien;
+
+      //   let thanhTien =
+      //     thongTinDonHang.danhSachSanPham.sp01.soLuong *
+      //       thongTinDonHang.danhSachSanPham.sp01.giaTien +
+      //     thongTinDonHang.danhSachSanPham.sp02.soLuong *
+      //       thongTinDonHang.danhSachSanPham.sp02.giaTien +
+      //     thongTinDonHang.danhSachSanPham.sp03.soLuong * thongTinDonHang.danhSachSanPham.sp03.giaTien;
+      tongTien = tongSP1 + tongSP2 + tongSP3;
+      //   document.writeln("Tổng tiền :" + tongTien);
+
+      //parse : ép kiểu
+      //parseInt : ép kiểu nguyên
+      //parseFloat : ép số thực
+
+      //   document.writeln("Độ dài của mã đơn hàng: " + thongTinDonHang.maDonHang.length);
+      // .length : độ dài của chuỗi (String)
+
+      var myString = "Hello SuE";
+      //   document.writeln(myString[4]);
+      //   document.writeln(myString.slice(1, 4));
+      // Cắt chuỗi : slice,
+
+      //   document.writeln(myString.replace("Hello", "Hi"));
+      //   .replace("", "") : thay thế chuỗi, kí tự
+
+      //   document.writeln(myString.toLowerCase());
+      // .toUpperCase(): viết hoa hết
+      // .toLowerCase(): viết thường hết
+
+      //   document.writeln(myString.indexOf("e"));
+      // indexOf trả ra vị trí xuất hiện đầu tiên
+      // nếu có: vị trí, nếu không : -1
+
+      //   document.writeln(myString.includes("e"));
+      // includes : nếu có trả về true, không có thì false
+
+      //Tách chuỗi thành mảng
+      //   document.writeln(Array.isArray(myString.split(' ')));
+      //   document.writeln(myString.split('l'));
+
+      //let danhSach = ["Le Hi", "Nguyen He", "Tran Hu", "4", "5"];
+      //document.writeln(danhSach[1].startsWith("Nguyen"));
+      // .startWith(""): Kiểm tra chuỗi có bắt đầu bằng kí tự nào hay k
+      // nếu có : true , không : false
+
+      // chuyển chuỗi về số
+      //   let so = "123";
+      //   document.writeln(typeof so);
+      //   document.writeln(typeof Number(so));
+
+      //   parseInt("10.5");
+      //   parseFloat("10.5");
+      // chuyển đổi chuỗi
+
+      var pi = 3.14159;
+      pi.toFixed(2); // Kết quả 3.14
+      //   .toFixed : định dạng số với chữ số thập phân nhát định
+
+      // Kiểm tra số
+      isNaN(NaN); // true
+      // kiểm tra xem có phải giá trị NaN (Not-a-Number) không
+      isFinite(10); // true
+      // kiểm tra xem có phải giá trị hữu hạn hay không
+
+      // Date là 1 đtg
+      let toDay = new Date();
+      document.writeln(toDay);
+
+      //
+      document.writeln(toDay.getDate());
+
+      // Lấy ngày, tháng, năm:
+      // .getFullYear();
+      // .getMonth(); //0-11
+      // .getDate();
+
+      // Lấy giờ, phút, giây:
+      // .getHours();
+      // .getMinutes();
+      // .getSeconds();
+    </script>
+  </body>
+</html>
