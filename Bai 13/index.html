@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="anh">
+      <h2>Ví dụ về chế độ</h2>
+      <img src="images.png" alt="" />
+    </div>
+    <h2>Chế độ: Sáng</h2>
+    <div>
+      <button onclick="doiCheDo()">Đổi chế độ</button>
+    </div>
+
+    <script>
+      let cheDo = true;
+
+      function doiCheDo() {
+        if (cheDo == true) {
+          document.getElementsByTagName("body")[0].style = "background-color: black";
+          document.getElementsByTagName("h2")[1].innerHTML = "Chế độ : Tối";
+          document.getElementsByTagName("h2")[0].style = "color : white";
+          document.getElementsByTagName("h2")[1].style = "color : white";
+          document.getElementsByTagName("img")[0].src = "images1.png";
+          cheDo = false;
+        } else {
+          document.getElementsByTagName("body")[0].style = "background-color: white";
+          document.getElementsByTagName("h2")[1].innerHTML = "Chế độ : Sáng";
+          document.getElementsByTagName("h2")[0].style = "color : black";
+          document.getElementsByTagName("h2")[1].style = "color : black";
+          document.getElementsByTagName("img")[0].src = "images.png";
+          cheDo = true;
+        }
+      }
+    </script>
+  </body>
+</html>
